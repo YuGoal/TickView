@@ -82,11 +82,11 @@ public class TickView extends View {
         radius = typedArray.getDimensionPixelOffset(R.styleable.TickView_radius, dp2px(mContext, 30));
         int rateMode = typedArray.getInt(R.styleable.TickView_rate, 1);
         mTickRateEnum = TickRateEnum.getRateEnum(rateMode);
+        tickRadius = typedArray.getDimensionPixelOffset(R.styleable.TickView_tickRadius,dp2px(mContext,12));
+        tickRadiusOffset = typedArray.getDimensionPixelOffset(R.styleable.TickView_tickRadiusOffset,dp2px(mContext, 4));
         typedArray.recycle();
 
         scaleCounterRange = dp2px(mContext, 30);
-        tickRadius = dp2px(mContext, 12);
-        tickRadiusOffset = dp2px(mContext, 4);
     }
 
     private void init() {

@@ -9,6 +9,10 @@
     <attr name="check_tick_color" format="color" />
     <!--圆的半径-->
     <attr name="radius" format="dimension" />
+    <!--对勾的偏移量-->
+    <attr name="tickRadiusOffset" format="dimension" />
+    <!--对勾的半径-->
+    <attr name="tickRadius" format="dimension" />
     <!--动画执行的速度-->
     <attr name="rate">
         <enum name="slow" value="0"/>
